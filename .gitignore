@@ -9,3 +9,6 @@ screenshots/
 *.png
 *.pdf
 *.docx
+!assets/oak-green.png
+!assets/oak-cream.png
+!assets/oak-forest.png
