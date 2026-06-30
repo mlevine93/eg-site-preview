@@ -1,0 +1,11 @@
+node_modules/
+package.json
+package-lock.json
+shoot.js
+screenshots/
+.claude/
+
+*.pptx
+*.png
+*.pdf
+*.docx

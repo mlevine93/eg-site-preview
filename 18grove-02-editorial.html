@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- PREVIEW ONLY: remove this noindex line before the real launch -->
+<meta name="robots" content="noindex,nofollow" />
+<title>Eighteen Grove — Private investment for founder & family-owned businesses</title>
+<meta name="description" content="Eighteen Grove is a Miami private investment firm that partners with and grows founder- and family-owned services and distribution businesses ($1–$10M EBITDA) — and keeps the team that built them." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Eighteen Grove — Private investment for founder & family-owned businesses" />
+<meta property="og:description" content="A partner for owners considering a transition. We keep your management, protect your name, and move on your timeline. Founder-led, Coconut Grove, Miami." />
+<meta property="og:site_name" content="Eighteen Grove" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Eighteen Grove","legalName":"Eighteen Grove Management, LP","description":"Private investment firm partnering with founder- and family-owned businesses in the lower middle market.","address":{"@type":"PostalAddress","streetAddress":"2980 McFarlane Road","addressLocality":"Miami","addressRegion":"FL","postalCode":"33133","addressCountry":"US"},"email":"inquiries@eighteengrove.com","telephone":"+1-646-565-8200"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --paper:#FBFAF7;
+    --paper-2:#F1F0EA;
+    --ink:#16150F;
+    --ink-2:#2A2820;
+    --green:#225831;
+    --green-d:#1B3B28;
+    --green-l:#3C7A4D;
+    --muted:#6B6757;
+    --line:#E2DFD4;
+    --line-2:#CFCABA;
+    --serif:'Fraunces', Georgia, serif;
+    --sans:'Inter', system-ui, sans-serif;
+    --mono:'IBM Plex Mono', monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);background:var(--paper);color:var(--ink);font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  .page{display:none}
+  .page.active{display:block;animation:fade .5s ease both}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+  .wrap{max-width:1280px;margin:0 auto;padding:0 44px}
+  a{color:inherit;text-decoration:none}
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:400;line-height:1.02;letter-spacing:-.015em}
+  .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--green)}
+  .kicker.m{color:var(--muted)}
+  :focus-visible{outline:2px solid var(--green);outline-offset:3px}
+
+  .oak{display:inline-block;vertical-align:middle}
+  .oak svg{display:block;width:100%;height:100%}
+  .wordmark{font-family:var(--serif);font-weight:500;letter-spacing:-.01em;font-variant:small-caps;text-transform:lowercase}
+
+  /* NAV */
+  header.nav{position:sticky;top:0;z-index:60;background:var(--paper);border-bottom:1px solid var(--line)}
+  .nav-inner{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:72px}
+  .brand{display:flex;align-items:center;gap:10px;color:var(--ink)}
+  .brand .oak{width:26px;height:24px;color:var(--green-d)}
+  .brand .wordmark{font-size:23px}
+  nav.links{display:flex;gap:30px;justify-content:center}
+  nav.links a{font-size:13px;color:var(--ink-2);position:relative;padding:3px 0;transition:color .2s}
+  nav.links a:hover{color:var(--green)}
+  nav.links a.active{color:var(--ink)}
+  nav.links a.active::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--green)}
+  .nav-right{display:flex;justify-content:flex-end;align-items:center;gap:22px}
+  .nav-date{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.04em}
+  .nav-login{font-size:12px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.08em;border:1px solid var(--ink);padding:9px 16px;transition:.25s}
+  .nav-login:hover{background:var(--ink);color:var(--paper)}
+  .burger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+  .burger span{width:24px;height:1.5px;background:var(--ink)}
+
+  .masthead{border-bottom:1px solid var(--ink);padding:18px 0}
+  .masthead .wrap{display:flex;justify-content:space-between;align-items:baseline}
+  .masthead .vol{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+
+  .hero{padding:74px 0 0}
+  .hero-grid{display:grid;grid-template-columns:1.55fr 1fr;gap:64px;align-items:end;padding-bottom:64px;border-bottom:1px solid var(--line)}
+  .hero h1{font-size:clamp(46px,7.6vw,116px);letter-spacing:-.03em;line-height:.96}
+  .hero h1 em{font-style:italic;font-family:var(--serif)}
+  .hero .deck{font-family:var(--serif);font-weight:300;font-size:21px;line-height:1.5;color:var(--ink-2);max-width:27em;margin-top:8px}
+  .byline{display:flex;gap:18px;align-items:center;margin-top:34px;font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+  .byline .read{color:var(--green)}
+
+  .hero-feature{padding:64px 0}
+  .feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+  .feature-img{aspect-ratio:5/6;background:linear-gradient(180deg,#1F4530,#16150F);position:relative;overflow:hidden;box-shadow:inset 0 0 0 1px rgba(251,250,247,.08);display:flex;align-items:center;justify-content:center}
+  .feature-img .oak{width:130px;height:120px;color:rgba(251,250,247,.14)}
+  .feature-img::after{content:"";position:absolute;inset:16px;border:1px solid rgba(251,250,247,.12)}
+  .feature-img::before{content:"Fig. 01";position:absolute;top:18px;left:20px;font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(251,250,247,.55);z-index:2}
+  .feature-img .cap{position:absolute;bottom:20px;left:22px;right:22px;font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:rgba(251,250,247,.72);z-index:2;line-height:1.6}
+  .feature-grid h2{font-size:clamp(30px,3.8vw,52px);line-height:1.04;margin:16px 0 20px}
+  .feature-grid p{font-size:16.5px;color:var(--ink-2);max-width:30em;margin-bottom:26px}
+
+  .secbar{display:flex;justify-content:space-between;align-items:baseline;padding:54px 0 30px;border-top:1px solid var(--ink)}
+  .secbar h2{font-size:30px}
+  .secbar .idx{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
+
+  .idx-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+  .idx-item{padding:34px 30px 40px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);transition:background .3s}
+  .idx-item:nth-child(3n){border-right:none}
+  .idx-item:hover{background:var(--paper-2)}
+  .idx-item .num{font-family:var(--mono);font-size:11px;color:var(--green);letter-spacing:.1em}
+  .idx-item h3{font-size:25px;margin:26px 0 12px;line-height:1.08}
+  .idx-item p{font-size:14px;color:var(--ink-2)}
+  .idx-item .tag{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-top:22px;display:block}
+
+  .pull{padding:140px 0;background:var(--ink);color:var(--paper);position:relative;overflow:hidden}
+  .pull .oak-bg{position:absolute;right:3%;top:50%;transform:translateY(-50%);width:240px;height:222px;color:rgba(251,250,247,.04)}
+  .pull .wrap{position:relative}
+  .pull blockquote{font-family:var(--serif);font-size:clamp(28px,4.2vw,58px);line-height:1.14;letter-spacing:-.02em;max-width:18em}
+  .pull blockquote em{font-style:italic;color:#8FBF9B}
+  .pull .attr{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:rgba(251,250,247,.55);margin-top:40px}
+  .pull .kicker{color:#8FBF9B}
+
+  .movements{padding:84px 0}
+  .movement{display:grid;grid-template-columns:120px 1fr 1.3fr;gap:40px;padding:42px 0;border-bottom:1px solid var(--line);align-items:start;transition:.3s}
+  .movement:first-child{border-top:1px solid var(--ink)}
+  .movement:hover{padding-left:14px}
+  .movement .mnum{font-family:var(--serif);font-size:64px;color:var(--line-2);line-height:.8}
+  .movement h3{font-size:28px;margin-bottom:6px}
+  .movement .mlabel{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--green)}
+  .movement p{font-size:15.5px;color:var(--ink-2);max-width:34em}
+
+  .ribbon{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:30px 0}
+  .ribbon .cell{background:var(--paper);padding:30px 26px}
+  .ribbon .cell .rk{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:16px}
+  .ribbon .cell .rv{font-family:var(--serif);font-size:20px;line-height:1.25}
+
+  .endbar{padding:96px 0;border-top:1px solid var(--ink)}
+  .endbar h2{font-size:clamp(34px,5vw,72px);line-height:.98;letter-spacing:-.02em;max-width:14em}
+  .endbar h2 em{font-style:italic;color:var(--green)}
+  .arrow-link{display:inline-flex;align-items:center;gap:12px;font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.1em;margin-top:36px;border-bottom:1px solid var(--ink);padding-bottom:6px;transition:gap .3s}
+  .arrow-link:hover{gap:20px}
+  .arrow-link.p{color:var(--green);border-color:var(--green)}
+
+  footer.site{border-top:1px solid var(--ink);padding:64px 0 36px}
+  .foot-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;padding-bottom:50px;border-bottom:1px solid var(--line)}
+  .foot-mark{display:flex;align-items:center;gap:11px}
+  .foot-mark .oak{width:30px;height:28px;color:var(--green-d)}
+  .foot-mark .wordmark{font-size:30px}
+  .foot-top p{font-size:14px;color:var(--muted);margin-top:16px;max-width:24em}
+  .foot-top .addr{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:14px;line-height:1.7}
+  .foot-col h5{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:18px}
+  .foot-col a{display:block;font-size:14.5px;padding:6px 0;color:var(--ink-2);transition:color .2s}
+  .foot-col a:hover{color:var(--green)}
+  .foot-bot{display:flex;justify-content:space-between;padding-top:26px;font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.04em;gap:30px;flex-wrap:wrap}
+  .foot-bot .disc{max-width:46em;line-height:1.7}
+
+  /* ARTICLE */
+  .art-hero{padding:80px 0 0}
+  .art-meta{display:flex;gap:16px;font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:30px}
+  .art-meta .cat{color:var(--green)}
+  .art-title{font-size:clamp(40px,6vw,84px);line-height:.96;letter-spacing:-.025em;max-width:15em}
+  .art-title em{font-style:italic}
+  .art-standfirst{font-family:var(--serif);font-size:clamp(20px,2.4vw,28px);line-height:1.42;color:var(--ink-2);max-width:26em;margin:30px 0 40px}
+  .art-byline{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--line);font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+  .art-lead-img{aspect-ratio:16/8;background:linear-gradient(150deg,#1F4530,#16150F);position:relative;overflow:hidden;margin:46px 0;box-shadow:inset 0 0 0 1px rgba(251,250,247,.08);display:flex;align-items:center;justify-content:center}
+  .art-lead-img .oak{width:140px;height:130px;color:rgba(251,250,247,.13)}
+  .art-lead-img::after{content:"";position:absolute;inset:18px;border:1px solid rgba(251,250,247,.12)}
+  .art-lead-img::before{content:"Plate 01";position:absolute;top:20px;left:24px;font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(251,250,247,.55);z-index:2}
+  .art-lead-img .cap{position:absolute;bottom:18px;left:24px;right:24px;font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:rgba(251,250,247,.7);z-index:2}
+  .art-body{display:grid;grid-template-columns:180px minmax(0,62ch) 1fr;gap:56px;padding-bottom:60px}
+  .art-aside{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);line-height:2}
+  .art-aside .stick{position:sticky;top:100px}
+  .art-aside h6{font-family:var(--mono);font-weight:500;color:var(--green);margin-bottom:14px;font-size:10px}
+  .toc{display:flex;flex-direction:column}
+  .toc-link{display:block;color:var(--muted);padding:7px 0 7px 14px;text-transform:none;letter-spacing:0;font-size:13px;font-family:var(--sans);border-left:2px solid var(--line);margin-left:-2px;transition:color .25s,border-color .25s}
+  .toc-link:hover{color:var(--ink)}
+  .toc-link.active{color:var(--green);border-left-color:var(--green)}
+  .prose{max-width:38em}
+  .prose p,.prose h3{scroll-margin-top:90px}
+  .prose .first{font-family:var(--serif);font-size:20px;line-height:1.55}
+  .prose .first::first-letter{font-family:var(--serif);font-size:78px;float:left;line-height:.74;padding:6px 12px 0 0;color:var(--green)}
+  .prose p{font-size:17px;line-height:1.74;margin-bottom:24px;color:var(--ink-2)}
+  .prose h3{font-family:var(--serif);font-size:30px;margin:48px 0 18px;letter-spacing:-.01em}
+  .prose blockquote{font-family:var(--serif);font-size:28px;line-height:1.3;color:var(--ink);border-left:2px solid var(--green);padding-left:28px;margin:40px 0;font-style:italic}
+  .prose .note{font-family:var(--mono);font-size:12px;color:var(--muted);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;margin:36px 0;letter-spacing:.02em;line-height:1.8;text-transform:none}
+  .more-writing{border-top:1px solid var(--ink);padding:46px 0 30px;margin-top:10px}
+  .mw-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);margin-top:24px}
+  .mw-item{padding:30px 28px 38px;border-right:1px solid var(--line);transition:background .3s}
+  .mw-item:last-child{border-right:none}
+  .mw-item:hover{background:var(--paper-2)}
+  .mw-n{font-family:var(--mono);font-size:11px;color:var(--green);letter-spacing:.08em}
+  .mw-item h4{font-family:var(--serif);font-weight:400;font-size:22px;margin-top:18px;line-height:1.1;letter-spacing:-.01em}
+
+  .page-hero{padding:80px 0 56px;border-bottom:1px solid var(--line)}
+  .page-hero h1{font-size:clamp(44px,6.4vw,92px);letter-spacing:-.03em;line-height:.94;max-width:13em}
+  .page-hero h1 em{font-style:italic}
+  .page-hero .deck{font-family:var(--serif);font-weight:300;font-size:19px;color:var(--ink-2);max-width:30em;margin-top:26px;line-height:1.55}
+
+  /* LOGIN */
+  .login-screen{min-height:100vh;display:grid;grid-template-columns:1fr 1fr}
+  .login-edit{background:var(--ink);color:var(--paper);padding:56px 60px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+  .login-edit .oak-bg{position:absolute;right:-6%;bottom:-6%;width:300px;height:278px;color:rgba(251,250,247,.05)}
+  .login-edit>*{position:relative;z-index:2}
+  .login-vol{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(251,250,247,.55)}
+  .login-edit h2{font-size:clamp(36px,4.4vw,60px);line-height:.98;letter-spacing:-.02em}
+  .login-edit h2 em{font-style:italic;color:#8FBF9B}
+  .login-edit .efoot{font-family:var(--mono);font-size:10px;letter-spacing:.04em;color:rgba(251,250,247,.5);line-height:1.9}
+  .login-edit .efoot a{color:#8FBF9B;border-bottom:1px solid rgba(143,191,155,.4)}
+  .login-form-side{display:flex;align-items:center;justify-content:center;padding:48px}
+  .lform{width:100%;max-width:400px}
+  .lform .brand{display:flex;align-items:center;gap:10px;margin-bottom:6px;color:var(--ink)}
+  .lform .brand .oak{width:28px;height:26px;color:var(--green-d)}
+  .lform .brand .wordmark{font-size:23px}
+  .lform .sub{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:46px}
+  .lform h3{font-size:34px;margin-bottom:10px}
+  .lform .intro{font-size:14.5px;color:var(--ink-2);margin-bottom:36px}
+  .field{margin-bottom:22px}
+  .field label{display:block;font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:10px}
+  .field input{width:100%;background:var(--paper-2);border:1px solid var(--line);padding:14px 16px;font-family:var(--sans);font-size:15px;color:var(--ink);transition:.25s}
+  .field input:focus{outline:none;border-color:var(--green);background:var(--paper)}
+  .lrow{display:flex;justify-content:space-between;align-items:center;margin:26px 0}
+  .lrow .rem{display:flex;gap:9px;align-items:center;font-size:13px;color:var(--ink-2);cursor:pointer}
+  .lrow .rem .b{width:15px;height:15px;accent-color:var(--green);cursor:pointer;margin:0}
+  .lrow a{font-family:var(--mono);font-size:11px;color:var(--green)}
+  .lbtn{width:100%;background:var(--green-d);color:#fff;border:none;cursor:pointer;padding:16px;font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.12em;transition:.25s}
+  .lbtn:hover{background:var(--green)}
+  .lnote{margin-top:30px;padding-top:22px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);line-height:1.7}
+  .lnote a{color:var(--green)}
+
+  .contact-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:70px;padding:64px 0;align-items:start}
+  .cblock{padding:26px 0;border-top:1px solid var(--line)}
+  .cblock:first-child{border-top:1px solid var(--ink)}
+  .cblock .k{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--green);margin-bottom:12px}
+  .cblock .v{font-family:var(--serif);font-size:24px}
+  .cblock .v a{border-bottom:1px solid var(--line-2)}
+
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s cubic-bezier(.2,.6,.2,1),transform .6s cubic-bezier(.2,.6,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1!important;transform:none!important;transition:none}}
+
+  /* panel additions */
+  .qualifier{font-size:17px;font-weight:500;line-height:1.55;color:var(--ink);max-width:30em;margin-top:18px}
+  .qualifier .hl{color:var(--green)}
+  .founder-line{margin-top:22px;padding-left:16px;border-left:2px solid var(--green)}
+  .founder-line p{font-family:var(--serif);font-style:italic;font-size:17px;line-height:1.5;color:var(--ink-2);max-width:26em}
+  .founder-line .sig{display:block;font-family:var(--mono);font-style:normal;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+  .commit-list{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--ink);margin-top:24px}
+  .commit-item{padding:28px 30px 32px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .commit-item:nth-child(2n){border-right:none}
+  .commit-item .ck{font-family:var(--mono);font-size:11px;color:var(--green);letter-spacing:.1em}
+  .commit-item p{font-family:var(--serif);font-size:20px;line-height:1.28;margin-top:14px;letter-spacing:-.01em}
+  .stage-note{border-top:1px solid var(--ink);padding-top:22px;max-width:46em}
+  .stage-note .k{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);margin-bottom:12px}
+  .stage-note p{font-size:16px;color:var(--ink-2);line-height:1.65}
+  .stage-note p+p{margin-top:12px}
+  .confid{border:1px solid var(--line);border-left:3px solid var(--green);padding:20px 24px;margin-bottom:24px}
+  .confid p{font-size:14.5px;color:var(--ink-2);line-height:1.6}
+  .confid strong{color:var(--green-d)}
+  .field textarea{width:100%;background:var(--paper-2);border:1px solid var(--line);padding:14px 16px;font-family:var(--sans);font-size:15px;color:var(--ink);min-height:120px;resize:vertical}
+  .field textarea:focus{outline:none;border-color:var(--green);background:var(--paper)}
+  .field select{width:100%;background:var(--paper-2);border:1px solid var(--line);padding:14px 16px;font-family:var(--sans);font-size:15px;color:var(--ink)}
+  .advisors{border-top:1px solid var(--ink);padding-top:28px}
+  .advisors h3{font-family:var(--serif);font-size:26px;margin-bottom:12px}
+  .advisors p{font-size:15px;color:var(--ink-2);max-width:40em}
+  .advisors ul{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:8px 28px;margin-top:18px}
+  .advisors li{font-size:14px;color:var(--ink-2);padding-left:18px;position:relative}
+  .advisors li::before{content:"—";position:absolute;left:0;color:var(--green)}
+  .legal-body{max-width:46em;padding:64px 0}
+  .legal-body h3{font-family:var(--serif);font-size:26px;margin:40px 0 12px}
+  .legal-body h3:first-child{margin-top:0}
+  .legal-body p{font-size:15px;color:var(--ink-2);line-height:1.7;margin-bottom:14px}
+  @media(max-width:760px){.commit-list{grid-template-columns:1fr}.commit-item{border-right:none}.advisors ul{grid-template-columns:1fr}}
+  /* sector list */
+  .sector-list{border-top:1px solid var(--ink);margin-top:18px}
+  .sector{display:grid;grid-template-columns:0.9fr 1.6fr;gap:40px;padding:36px 0;border-bottom:1px solid var(--line)}
+  .sector .s-head{display:flex;align-items:baseline;gap:14px}
+  .sector .s-head .snum{font-family:var(--mono);font-size:11px;color:var(--green);letter-spacing:.1em}
+  .sector .s-head h3{font-size:27px;line-height:1.04}
+  .sector>p{font-size:15px;color:var(--ink-2);margin-bottom:16px;max-width:34em}
+  .sector .subs{display:flex;flex-wrap:wrap;gap:8px}
+  .sector .subs span{font-family:var(--mono);font-size:11px;letter-spacing:.02em;color:var(--ink-2);background:var(--paper-2);border:1px solid var(--line);padding:6px 11px}
+  .sector-note{margin-top:22px;font-size:14px;color:var(--muted);max-width:44em}
+  /* stewardship */
+  .steward{padding:130px 0;background:var(--ink);color:var(--paper)}
+  .steward .kicker{color:#8FBF9B}
+  .steward blockquote{font-family:var(--serif);font-size:clamp(28px,4vw,54px);line-height:1.16;letter-spacing:-.02em;max-width:17em;margin-top:28px}
+  .steward blockquote em{font-style:italic;color:#8FBF9B}
+  @media(max-width:760px){.sector{grid-template-columns:1fr;gap:14px}}
+  .mobile-menu{display:none;position:fixed;inset:72px 0 0;background:var(--paper);z-index:55;flex-direction:column;padding:30px 44px}
+  .mobile-menu a{font-family:var(--serif);font-size:34px;padding:14px 0;border-bottom:1px solid var(--line)}
+  .mobile-menu.open{display:flex}
+
+  @media(max-width:980px){
+    .wrap{padding:0 22px}
+    .nav-inner{grid-template-columns:1fr auto}
+    nav.links,.nav-right{display:none}
+    .burger{display:flex}
+    .hero-grid,.feature-grid,.idx-grid,.movement,.ribbon,.foot-top,.art-body,.contact-grid,.login-screen,.mw-grid{grid-template-columns:1fr!important;display:block}
+    .idx-item{border-right:none}
+    .movement{padding:30px 0}
+    .movement .mnum{font-size:44px}
+    .mw-grid{display:grid}
+    .mw-item{border-right:none;border-bottom:1px solid var(--line)}
+    .art-aside .stick{position:static}
+    .toc{flex-direction:row;flex-wrap:wrap;gap:8px;margin-bottom:8px}
+    .toc h6{width:100%;margin-bottom:6px}
+    .toc-link{border-left:none;border:1px solid var(--line);border-radius:2px;padding:7px 12px;white-space:nowrap;margin:0}
+    .toc-link.active{border-color:var(--green)}
+    .prose{max-width:none}
+    .feature-img{margin-bottom:30px}
+    .ribbon .cell{border-bottom:1px solid var(--line)}
+    .foot-col{margin-top:34px}
+    .login-edit{min-height:300px}
+    .login-edit h2{margin:20px 0}
+  }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="oak" viewBox="0 0 72 64"><g fill="currentColor"><circle cx="36" cy="22" r="14"/><circle cx="20" cy="27" r="11"/><circle cx="52" cy="27" r="11"/><circle cx="28" cy="16" r="9"/><circle cx="44" cy="16" r="9"/><circle cx="13" cy="33" r="8"/><circle cx="59" cy="33" r="8"/><circle cx="36" cy="33" r="13"/><path d="M33 33 L33 50 C33 54 29 55 24 57 L48 57 C43 55 39 54 39 50 L39 33 Z"/></g></symbol></svg>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#home" class="brand" data-nav><span class="oak"><svg><use href="#oak"/></svg></span><span class="wordmark">Eighteen Grove</span></a>
+    <nav class="links">
+      <a href="#home" data-nav>Home</a>
+      <a href="#firm" data-nav>Firm</a>
+      <a href="#approach" data-nav>Approach</a>
+      <a href="#criteria" data-nav>Criteria</a>
+      <a href="#insights" data-nav>Guides</a>
+      <a href="#contact" data-nav>Contact</a>
+    </nav>
+    <div class="nav-right">
+      <span class="nav-date">Miami · 2026</span>
+      <a href="#contact" class="nav-login" data-nav>Start a conversation</a>
+    </div>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" data-nav>Home</a><a href="#firm" data-nav>Firm</a><a href="#approach" data-nav>Approach</a><a href="#criteria" data-nav>Criteria</a><a href="#insights" data-nav>Guides</a><a href="#contact" data-nav>Contact</a><a href="#login" data-nav>Investor relations</a>
+</div>
+
+<!-- HOME -->
+<main id="home" class="page active">
+  <div class="masthead"><div class="wrap"><span class="vol">A private investment firm</span><span class="vol">Coconut Grove · Miami · 2026</span></div></div>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <span class="kicker">The Firm — An Introduction</span>
+          <h1 style="margin-top:24px">We grow<br>what owners<br><em>built.</em></h1>
+        </div>
+        <div>
+          <p class="deck">Eighteen Grove partners with founder- and family-owned businesses — investing in them, working alongside their teams, and continuing the professional legacies behind them.</p>
+          <p class="qualifier">We partner with and grow founder- and family-owned <span class="hl">services &amp; distribution businesses ($1–$10M EBITDA)</span> — and keep the team that built them.</p>
+          <div class="founder-line"><p>“We were built by someone who sold his own family's 50-year-old business — so we know exactly what an owner is weighing.”<span class="sig">Eighteen Grove · Founder-led</span></p></div>
+          <div class="byline"><span>Eighteen Grove</span><span>—</span><span class="read">Coconut Grove, Miami</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero-feature">
+    <div class="wrap">
+      <div class="feature-grid">
+        <div class="feature-img"><span class="oak"><svg><use href="#oak"/></svg></span><span class="cap">Photograph — to be commissioned · Coconut Grove</span></div>
+        <div>
+          <span class="kicker">Why we exist</span>
+          <h2>A partner for the businesses people spend a life building.</h2>
+          <p>We believe the best businesses are built quietly, over decades, by owners and operators who prioritize their people and their craft. Eighteen Grove was created to be a partner for those owners — and a good next chapter for what they've built.</p>
+          <a href="#firm" class="arrow-link p" data-nav>Read the firm's story →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="secbar"><h2>What we do</h2><span class="idx">Sections 01 — 03</span></div>
+      <div class="idx-grid">
+        <a class="idx-item" href="#approach" data-nav>
+          <span class="num">01 / Approach</span>
+          <h3>Partner with owners and their teams.</h3>
+          <p>Whether the goal is a transition, a value-added partnership, or finding the right next steward — we build the deal around the owner.</p>
+          <span class="tag">How we partner →</span>
+        </a>
+        <a class="idx-item" href="#criteria" data-nav>
+          <span class="num">02 / Criteria</span>
+          <h3>Back strong, founder-owned businesses.</h3>
+          <p>$1M–$10M of EBITDA, predictable cash flow, loyal customers, and meaningful room to grow.</p>
+          <span class="tag">Our criteria →</span>
+        </a>
+        <a class="idx-item" href="#insights" data-nav>
+          <span class="num">03 / Guides</span>
+          <h3>Write about owners, teams, and legacy.</h3>
+          <p>A founder's notes on what it means to hand over — and continue — something built over a lifetime.</p>
+          <span class="tag">Read more →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pull">
+    <span class="oak oak-bg"><svg><use href="#oak"/></svg></span>
+    <div class="wrap">
+      <span class="kicker">Our purpose</span>
+      <blockquote style="margin-top:30px">“We partner with owners, operators and their teams to grow businesses and <em>continue professional legacies.</em>”</blockquote>
+      <div class="attr">— Eighteen Grove · Coconut Grove, Miami</div>
+    </div>
+  </section>
+
+  <section class="movements">
+    <div class="wrap">
+      <div class="secbar" style="border:none;padding-bottom:10px"><h2>What we bring, in three parts</h2><span class="idx">Our commitments</span></div>
+      <div class="movement"><div class="mnum">01</div><div><span class="mlabel">Culture &amp; People</span><h3>Invest behind people</h3></div><p>We value the experience of our partners and protect the cultures that made a business worth backing. The team is the reason it endures.</p></div>
+      <div class="movement"><div class="mnum">02</div><div><span class="mlabel">Operational Excellence</span><h3>Real operating experience</h3></div><p>We bring transaction and operating experience, working hands-on with management to sharpen execution without disturbing what works.</p></div>
+      <div class="movement"><div class="mnum">03</div><div><span class="mlabel">Growth Focused</span><h3>Build value over time</h3></div><p>A long-term view that preserves and enhances equity value for owners and investors — substantial value built over years, not quarters.</p></div>
+    </div>
+  </section>
+
+  <section class="steward">
+    <div class="wrap">
+      <span class="kicker">Long-term stewardship</span>
+      <blockquote>Continuity for <em>employees, customers and vendors</em> — and a foundation built on, not torn down.</blockquote>
+      <p style="font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:rgba(251,250,247,.55);margin-top:36px;max-width:34em;line-height:1.8">We operate with a long-term mindset: to preserve what makes a business special, and thoughtfully build on it over time.</p>
+    </div>
+  </section>
+
+  <section style="padding-bottom:30px">
+    <div class="wrap">
+      <div class="secbar"><h2>The firm at a glance</h2><span class="idx">Particulars</span></div>
+      <div class="ribbon">
+        <div class="cell"><div class="rk">Headquarters</div><div class="rv">Coconut Grove, Miami</div></div>
+        <div class="cell"><div class="rk">Founded</div><div class="rv">2026</div></div>
+        <div class="cell"><div class="rk">Focus</div><div class="rv">Founder &amp; family-owned</div></div>
+        <div class="cell"><div class="rk">Target EBITDA</div><div class="rv">$1M – $10M</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:54px 0">
+    <div class="wrap">
+      <div class="secbar"><h2>What this means for you and your people</h2><span class="idx">Promises we can make on day one</span></div>
+      <div class="commit-list">
+        <div class="commit-item"><span class="ck">01</span><p>We keep your management team and the people who built the business.</p></div>
+        <div class="commit-item"><span class="ck">02</span><p>We don't strip the name or gut headcount to hit a number.</p></div>
+        <div class="commit-item"><span class="ck">03</span><p>Every conversation is confidential, from the first call.</p></div>
+        <div class="commit-item"><span class="ck">04</span><p>We move on your timeline, not ours.</p></div>
+        <div class="commit-item"><span class="ck">05</span><p>You can roll equity, stay involved, and keep upside.</p></div>
+        <div class="commit-item"><span class="ck">06</span><p>You deal directly with the founder — the decision-maker, not a committee.</p></div>
+      </div>
+      <p style="font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:22px">Commitments of conduct, not claims of outcome. <a href="#approach" class="arrow-link p" data-nav style="margin-top:0;display:inline-flex">See how a partnership works →</a></p>
+    </div>
+  </section>
+
+  <section style="padding:0 0 64px">
+    <div class="wrap">
+      <div class="stage-note">
+        <div class="k">A note on our stage</div>
+        <p>Eighteen Grove is newly launched. The figures on this site describe the businesses we seek to partner with — not a track record we're claiming. Our criteria are real; our portfolio is being built.</p>
+        <p>Being new is rather the point: your business won't be one of fifty in a fund. It gets the founder's direct attention, and references from prior counterparties are available on request.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="endbar">
+    <div class="wrap">
+      <span class="kicker">Correspondence</span>
+      <h2 style="margin-top:24px">If you've built<br>something worth<br><em>continuing</em>, write.</h2>
+      <a href="#contact" class="arrow-link" data-nav>Introduce yourself →</a>
+    </div>
+  </section>
+
+  <footer class="site"><div class="wrap">
+    <div class="foot-top">
+      <div><div class="foot-mark"><span class="oak"><svg><use href="#oak"/></svg></span><span class="wordmark">Eighteen Grove</span></div><p>A Miami private investment firm partnering with founder- and family-owned businesses to continue professional legacies.</p><div class="addr">2980 McFarlane Road, Miami, FL 33133<br>inquiries@eighteengrove.com · +1 (646) 565-8200</div></div>
+      <div class="foot-col"><h5>Sections</h5><a href="#firm" data-nav>Firm</a><a href="#approach" data-nav>Approach</a><a href="#criteria" data-nav>Criteria</a><a href="#insights" data-nav>Guides</a></div>
+      <div class="foot-col"><h5>Access</h5><a href="#login" data-nav>Investor relations</a><a href="#contact" data-nav>Contact</a></div>
+      <div class="foot-col"><h5>Office</h5><a>Coconut Grove</a><a href="#contact" data-nav>By appointment</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 Eighteen Grove</span><span class="disc">For informational purposes only. Not an offer to sell or a solicitation to buy any security. See <a href="#legal" data-nav>Disclosures</a>.</span></div>
+  </div></footer>
+</main>
+
+<!-- FIRM -->
+<main id="firm" class="page">
+  <section class="page-hero"><div class="wrap"><span class="kicker">The Firm</span><h1 style="margin-top:22px">A hands-on<br>partner, not a<br><em>passive owner.</em></h1><p class="deck">Eighteen Grove, based in Miami, invests in and actively grows founder- and family-owned businesses with existing management.</p></div></section>
+  <section class="movements"><div class="wrap">
+    <div class="movement" style="border-top:none"><div class="mnum">—</div><div><span class="mlabel">About</span><h3>What we are</h3></div><p>A private investment firm that builds substantial long-term value for owners and investors in family-owned businesses — taking a long-term view that preserves and enhances equity value.</p></div>
+    <div class="movement"><div class="mnum">—</div><div><span class="mlabel">The founder</span><h3>Our founder</h3></div><p>Founder &amp; Managing Partner. 30+ transactions across Facility Services, Specialty Distribution, Insurance Services, and QSR. Sold his family's 50-year-old QSR business — the experience that shapes how the firm treats owners.</p></div>
+    <div class="movement"><div class="mnum">—</div><div><span class="mlabel">Where we are</span><h3>Coconut Grove, Miami</h3></div><p>2980 McFarlane Road, Miami, FL 33133. We work closely with owners and advisors across the lower middle market.</p></div>
+  </div></section>
+  <section style="padding:0 0 64px"><div class="wrap"><div class="stage-note">
+    <div class="k">A note on our stage</div>
+    <p>Eighteen Grove is newly launched. The figures on this site describe the businesses we seek to partner with — not a track record we're claiming. Our criteria are real; our portfolio is being built.</p>
+    <p>We'd rather you knew that up front. Being new means your business won't be one of fifty in a fund — it gets the founder's direct attention, and references from prior counterparties are available on request.</p>
+  </div></div></section>
+  <footer class="site"><div class="wrap"><div class="foot-top"><div><div class="foot-mark"><span class="oak"><svg><use href="#oak"/></svg></span><span class="wordmark">Eighteen Grove</span></div><p>Partnering with founder- and family-owned businesses.</p></div><div class="foot-col"><h5>Sections</h5><a href="#approach" data-nav>Approach</a><a href="#criteria" data-nav>Criteria</a><a href="#insights" data-nav>Guides</a></div><div class="foot-col"><h5>Access</h5><a href="#login" data-nav>Investor relations</a><a href="#contact" data-nav>Contact</a></div><div class="foot-col"><h5>Office</h5><a>Coconut Grove, Miami</a></div></div><div class="foot-bot"><span>© 2026 Eighteen Grove</span><span class="disc">For informational purposes only. <a href="#legal" data-nav>Disclosures</a></span></div></div></footer>
+</main>
+
+<!-- APPROACH -->
+<main id="approach" class="page">
+  <section class="page-hero"><div class="wrap"><span class="kicker">Approach</span><h1 style="margin-top:22px">A partner for<br>whatever comes<br><em>next.</em></h1><p class="deck">We are a partner for owners and their teams — to transition ownership, bring on a value-added partner, or find the right next steward.</p></div></section>
+  <section class="movements"><div class="wrap">
+    <div class="movement"><div class="mnum">01</div><div><span class="mlabel">Step one</span><h3>A confidential first call</h3></div><p>We talk, privately. We'll sign an NDA on request before you share anything sensitive, and nothing leaves the room without your say-so. No bankers required to say hello.</p></div>
+    <div class="movement"><div class="mnum">02</div><div><span class="mlabel">Step two</span><h3>An indication of value — no strings</h3></div><p>Within a few weeks we give you an honest read on value. No obligation, and no exclusivity to start. If it's not a fit, you've lost nothing.</p></div>
+    <div class="movement"><div class="mnum">03</div><div><span class="mlabel">Step three</span><h3>You choose the path</h3></div><p>Full sale, partial sale, or a value-added partnership where you keep building. Your team hears of any change from you, not from us.</p></div>
+    <div class="movement"><div class="mnum">04</div><div><span class="mlabel">Step four</span><h3>Certainty of close</h3></div><p>You deal directly with the founder — the decision-maker, not a committee. Management stays, your people keep their jobs, and we don't retrade absent a material, undisclosed problem.</p></div>
+  </div></section>
+  <section style="padding:0 0 64px"><div class="wrap">
+    <div class="advisors">
+      <span class="kicker" style="display:block;margin-bottom:14px">For advisors &amp; intermediaries</span>
+      <h3>We're easy to work with.</h3>
+      <p>If you represent an owner, you'll get a fast, straight answer on fit and a partner who respects your client relationship and your fee.</p>
+      <ul>
+        <li>A clear yes/no on fit, quickly</li>
+        <li>Your relationship and fee respected</li>
+        <li>Strict confidentiality throughout</li>
+        <li>One point of contact — the decision-maker</li>
+      </ul>
+      <div style="margin-top:22px"><a href="#contact" class="arrow-link p" data-nav>Submit a deal →</a></div>
+    </div>
+  </div></section>
+  <section class="pull"><span class="oak oak-bg"><svg><use href="#oak"/></svg></span><div class="wrap"><span class="kicker">A standing principle</span><blockquote style="margin-top:30px">“We seek to preserve our partners' heritages while <em>accelerating growth</em> together.”</blockquote></div></section>
+  <footer class="site"><div class="wrap"><div class="foot-top"><div><div class="foot-mark"><span class="oak"><svg><use href="#oak"/></svg></span><span class="wordmark">Eighteen Grove</span></div><p>Preserve heritages; accelerate growth.</p></div><div class="foot-col"><h5>Sections</h5><a href="#firm" data-nav>Firm</a><a href="#criteria" data-nav>Criteria</a></div><div class="foot-col"><h5>Access</h5><a href="#login" data-nav>Investor relations</a><a href="#contact" data-nav>Contact</a></div><div class="foot-col"><h5>Office</h5><a>Coconut Grove, Miami</a></div></div><div class="foot-bot"><span>© 2026 Eighteen Grove</span><span class="disc">For informational purposes only. <a href="#legal" data-nav>Disclosures</a></span></div></div></footer>
+</main>
+
+<!-- CRITERIA -->
+<main id="criteria" class="page">
+  <section class="page-hero"><div class="wrap"><span class="kicker">Investment Criteria</span><h1 style="margin-top:22px">What we look<br>for in a <em>partner.</em></h1><p class="deck">Family- and founder-owned businesses with strong foundations, committed teams, loyal customers, and meaningful growth potential.</p></div></section>
+  <section style="padding:54px 0 30px"><div class="wrap">
+    <div class="secbar"><h2>Target profile</h2><span class="idx">The fit we look for</span></div>
+    <div class="ribbon">
+      <div class="cell"><div class="rk">EBITDA</div><div class="rv">$1M – $10M</div></div>
+      <div class="cell"><div class="rk">Ownership</div><div class="rv">Founder / family</div></div>
+      <div class="cell"><div class="rk">Cash Flow</div><div class="rv">Predictable &amp; stable</div></div>
+      <div class="cell"><div class="rk">Structure</div><div class="rv">Transition, partner, or recap</div></div>
+    </div>
+    <div class="ribbon" style="margin-top:1px">
+      <div class="cell"><div class="rk">Fundamentals</div><div class="rv">Strong &amp; growing</div></div>
+      <div class="cell"><div class="rk">Customers</div><div class="rv">Diversified base</div></div>
+      <div class="cell"><div class="rk">Horizon</div><div class="rv">Long-term</div></div>
+      <div class="cell"><div class="rk">Region</div><div class="rv">North America</div></div>
+    </div>
+  </div></section>
+  <section><div class="wrap">
+    <div class="secbar"><h2>Sector focus</h2><span class="idx">Where we invest</span></div>
+    <p style="font-size:16px;color:var(--ink-2);max-width:40em;margin:0 0 8px">We concentrate on essential, often-overlooked services and distribution businesses — the kind built quietly over decades. A representative map of where we look.</p>
+    <div class="sector-list">
+      <div class="sector"><div class="s-head"><span class="snum">01</span><h3>Facility &amp; Commercial Services</h3></div><p>Essential, recurring services that keep commercial properties and operations running.</p><div class="subs"><span>Janitorial</span><span>Concierge &amp; Security (unarmed)</span><span>Laundry &amp; Linen</span><span>Exterior Services</span><span>Landscaping &amp; Pest Control</span><span>Warehouse, Docks &amp; Doors</span><span>Plumbing</span></div></div>
+      <div class="sector"><div class="s-head"><span class="snum">02</span><h3>Business &amp; Professional Services</h3></div><p>Knowledge- and relationship-driven services companies rely on but rarely run themselves.</p><div class="subs"><span>Insurance Services</span><span>Accounting</span><span>Industrial &amp; Technical Staffing</span><span>Office Staffing</span><span>Property Management</span></div></div>
+      <div class="sector"><div class="s-head"><span class="snum">03</span><h3>Residential &amp; Consumer Services</h3></div><p>Trusted, locally rooted services and multi-site concepts serving homes and consumers.</p><div class="subs"><span>Technical Trades</span><span>Handyman Services</span><span>Quick-Service Restaurants</span><span>Fitness Clubs</span><span>Boutique Fitness</span><span>Car Washes</span></div></div>
+      <div class="sector"><div class="s-head"><span class="snum">04</span><h3>Specialty Distribution &amp; Logistics</h3></div><p>Value-added distribution with technical know-how and sticky customer relationships.</p><div class="subs"><span>Restaurant &amp; Hotel Equipment &amp; Smallwares</span><span>Industrial Supplies</span><span>Building Materials</span></div></div>
+    </div>
+    <p class="sector-note">We also back multi-site franchisors and franchisees, and health &amp; fitness platforms, across these categories. <a href="#contact" data-nav class="arrow-link p" style="margin-top:0;display:inline-flex;vertical-align:middle">Discuss a business →</a></p>
+  </div></section>
+  <footer class="site"><div class="wrap"><div class="foot-top"><div><div class="foot-mark"><span class="oak"><svg><use href="#oak"/></svg></span><span class="wordmark">Eighteen Grove</span></div><p>Founder- and family-owned · $1M–$10M EBITDA.</p></div><div class="foot-col"><h5>Sections</h5><a href="#firm" data-nav>Firm</a><a href="#approach" data-nav>Approach</a></div><div class="foot-col"><h5>Access</h5><a href="#login" data-nav>Investor relations</a><a href="#contact" data-nav>Contact</a></div><div class="foot-col"><h5>Office</h5><a>Coconut Grove, Miami</a></div></div><div class="foot-bot"><span>© 2026 Eighteen Grove</span><span class="disc">For informational purposes only. <a href="#legal" data-nav>Disclosures</a></span></div></div></footer>
+</main>
+
+<!-- PERSPECTIVES (article) -->
+<main id="insights" class="page">
+  <section class="art-hero">
+    <div class="wrap">
+      <div class="art-meta"><span class="cat">Founder's Note</span><span>Coconut Grove · 2026</span><span>Eighteen Grove</span></div>
+      <h1 class="art-title">On continuing what owners <em>built.</em></h1>
+      <p class="art-standfirst">Having sold my own family's business, I know what the choice of partner means to the people who stay. This is the firm I wanted to exist.</p>
+      <div class="art-byline"><span>By the firm's founder</span><span>Coconut Grove · 2026</span></div>
+      <div class="art-lead-img"><span class="oak"><svg><use href="#oak"/></svg></span><span class="cap">Photograph — to be commissioned</span></div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <div class="art-body">
+        <aside class="art-aside"><nav class="stick toc" aria-label="In this note">
+          <h6>In this note</h6>
+          <a href="#s1" class="toc-link">I. The owner's chair</a>
+          <a href="#s2" class="toc-link">II. Why people matter</a>
+          <a href="#s3" class="toc-link">III. How we partner</a>
+          <a href="#s4" class="toc-link">IV. What we ask</a>
+        </nav></aside>
+        <article class="prose">
+          <p class="first reveal" id="s1">I have sat in the owner's chair. I helped sell my family's 50-year-old business — and learned how much the choice of partner matters, not to the seller, but to everyone who stays. Eighteen Grove exists because I wanted that partner to exist.</p>
+          <p class="reveal">The best businesses, in my experience, are built quietly, over decades, by owners and operators who prioritize their people and their craft. They are not the loudest companies, and they are rarely the ones for sale at auction. They are the ones whose teams have been there for years and whose customers come back without being asked.</p>
+          <h3 class="reveal" id="s2">Why people matter</h3>
+          <p class="reveal">When an owner sells, the numbers get all the attention. But the thing that made the business worth buying — the culture, the people, the relationships — is exactly the thing most easily broken by a new owner in a hurry. We treat that culture as the asset it is.</p>
+          <blockquote class="reveal">“We value the experience of our partners and seek to preserve their heritages while accelerating growth together.”</blockquote>
+          <p class="reveal">That is not sentiment; it is strategy. Preserving what works is how a business keeps its customers and its team through a transition — and how it keeps growing afterward.</p>
+          <h3 class="reveal" id="s3">How we partner</h3>
+          <p class="reveal">We invest in and actively grow founder- and family-owned businesses with existing management. Sometimes that means a full transition for an owner ready to retire; sometimes a value-added partnership for one who wants to keep building; sometimes simply being the right next steward. We keep management, work hands-on, and take a long-term view that preserves and enhances equity value.</p>
+          <p class="note reveal" id="s4">A note: Eighteen Grove is newly launched. The figures on this site describe the businesses we seek to partner with — not a track record we are claiming. Our criteria are real; our portfolio is being built.</p>
+          <p class="reveal">What we ask of an owner is simple: the chance to be a good next chapter. If you have built something worth continuing, I would like to hear about it.</p>
+          <div class="reveal" style="margin-top:34px;display:flex;gap:30px;flex-wrap:wrap">
+            <a href="#contact" class="arrow-link p" data-nav>Introduce yourself →</a>
+            <a href="#approach" class="arrow-link" data-nav>How we partner →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="more-writing">
+        <span class="kicker">More guides</span>
+        <div class="idx-grid" style="margin-top:24px">
+          <a class="idx-item" href="#insights" data-nav><span class="num">Transitions · June 2026</span><h3>Recap, partial sale, or full exit</h3><p>Selling isn't a single decision. The three paths for a founder- or family-owned business, and how to know which one fits.</p><span class="tag">Read the guide →</span></a>
+          <a class="idx-item" href="#insights" data-nav><span class="num">Valuation · May 2026</span><h3>What EBITDA really tells a buyer</h3><p>Earnings are where a buyer starts, not where they finish. How lower-middle-market businesses are actually valued.</p><span class="tag">Read the guide →</span></a>
+          <a class="idx-item" href="#insights" data-nav><span class="num">Stewardship · May 2026</span><h3>Preserving culture through a sale</h3><p>The hardest thing to keep intact in a transition is also the most valuable — and how to protect it.</p><span class="tag">Read the guide →</span></a>
+          <a class="idx-item" href="#insights" data-nav><span class="num">Transitions · April 2026</span><h3>Questions to ask a potential buyer</h3><p>Before you talk price, talk intentions — the questions that reveal whether a buyer will be a good steward.</p><span class="tag">Read the guide →</span></a>
+          <a class="idx-item" href="#insights" data-nav><span class="num">Investing · April 2026</span><h3>Why patient capital wins in the LMM</h3><p>Essential services and distribution businesses compound quietly. Why a long-term mindset matters most here.</p><span class="tag">Read the guide →</span></a>
+          <a class="idx-item" href="#insights" data-nav><span class="num">Sectors · March 2026</span><h3>A field guide to services M&amp;A</h3><p>Facility services, specialty distribution, and multi-site concepts: what makes them durable, and what buyers look for.</p><span class="tag">Read the guide →</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="site"><div class="wrap"><div class="foot-top"><div><div class="foot-mark"><span class="oak"><svg><use href="#oak"/></svg></span><span class="wordmark">Eighteen Grove</span></div><p>Notes on owners, teams, and legacy.</p></div><div class="foot-col"><h5>Sections</h5><a href="#firm" data-nav>Firm</a><a href="#approach" data-nav>Approach</a></div><div class="foot-col"><h5>Access</h5><a href="#login" data-nav>Investor relations</a><a href="#contact" data-nav>Contact</a></div><div class="foot-col"><h5>Office</h5><a>Coconut Grove, Miami</a></div></div><div class="foot-bot"><span>© 2026 Eighteen Grove</span><span class="disc">For informational purposes only. <a href="#legal" data-nav>Disclosures</a></span></div></div></footer>
+</main>
+
+<!-- CONTACT -->
+<main id="contact" class="page">
+  <section class="page-hero"><div class="wrap"><span class="kicker">Contact</span><h1 style="margin-top:22px">Introduce<br><em>yourself.</em></h1><p class="deck">Whether you're an owner considering a transition, an advisor with a fit, or an investor — we'd like to hear from you.</p></div></section>
+  <section><div class="wrap"><div class="contact-grid">
+    <div>
+      <div class="cblock"><div class="k">Leadership</div><div class="v">Founder-led</div></div>
+      <div class="cblock"><div class="k">Email</div><div class="v"><a href="mailto:inquiries@eighteengrove.com">inquiries@eighteengrove.com</a></div></div>
+      <div class="cblock"><div class="k">Telephone</div><div class="v"><a href="tel:+16465658200">+1 (646) 565-8200</a></div></div>
+      <div class="cblock"><div class="k">Office</div><div class="v">2980 McFarlane Road, Miami, FL 33133</div></div>
+    </div>
+    <div>
+      <span class="kicker">A line is enough</span>
+      <div class="confid" style="margin:18px 0 26px"><p><strong>Every conversation is confidential.</strong> Exploring is not a commitment, and nothing is shared without your say-so. We'll sign an NDA before reviewing anything sensitive — and you will hear back from us personally.</p></div>
+      <form onsubmit="return false" style="border-top:1px solid var(--ink);padding-top:24px">
+        <div class="field"><label for="e-name">Your name</label><input id="e-name" type="text" placeholder="First and last name" /></div>
+        <div class="field"><label for="e-role">You are</label>
+          <select id="e-role">
+            <option>A business owner</option><option>An advisor / intermediary</option><option>A prospective investor</option><option>Something else</option>
+          </select>
+        </div>
+        <div class="field"><label for="e-msg">A little about your business or question</label><textarea id="e-msg" placeholder="A sentence or two is plenty — what you do, roughly how big, and what you're weighing."></textarea></div>
+        <button class="lbtn" style="margin-top:12px">Send your note</button>
+      </form>
+    </div>
+  </div></div></section>
+  <footer class="site"><div class="wrap"><div class="foot-top"><div><div class="foot-mark"><span class="oak"><svg><use href="#oak"/></svg></span><span class="wordmark">Eighteen Grove</span></div><p>2980 McFarlane Road, Coconut Grove, Miami.</p></div><div class="foot-col"><h5>Sections</h5><a href="#firm" data-nav>Firm</a><a href="#approach" data-nav>Approach</a></div><div class="foot-col"><h5>Access</h5><a href="#login" data-nav>Investor relations</a><a href="#insights" data-nav>Guides</a></div><div class="foot-col"><h5>Office</h5><a>Coconut Grove, Miami</a></div></div><div class="foot-bot"><span>© 2026 Eighteen Grove</span><span class="disc">For informational purposes only. <a href="#legal" data-nav>Disclosures</a></span></div></div></footer>
+</main>
+
+<!-- LEGAL -->
+<main id="legal" class="page">
+  <section class="page-hero"><div class="wrap"><span class="kicker">Legal</span><h1 style="margin-top:22px">Disclosures &amp;<br><em>policies.</em></h1><p class="deck">Eighteen Grove Management, LP. The plain-language version is below; formal policies are provided in connection with any engagement.</p></div></section>
+  <section><div class="wrap"><div class="legal-body">
+    <h3>Important disclosures</h3>
+    <p>This website is for informational purposes only. Nothing on it is an offer to sell or a solicitation of an offer to buy any security, nor investment, legal, or tax advice. Any such offer would be made only to qualified investors through formal offering documents.</p>
+    <p>Eighteen Grove is a newly launched firm. Figures describing target revenue, EBITDA, and similar criteria reflect the businesses the firm seeks to partner with — not a representation of past performance or a track record. No portfolio company, return, or assets under management is represented anywhere on this site.</p>
+    <h3>Privacy Policy</h3>
+    <p>We collect only the information you choose to send us (for example, through the contact form or by email) and use it solely to respond to you and evaluate a potential relationship. We do not sell your information. Information you share is treated as confidential, and sensitive business information is reviewed under a non-disclosure agreement.</p>
+    <h3>Terms of Use</h3>
+    <p>By using this site you agree it is provided "as is" for general information. Trademarks and content are the property of Eighteen Grove Management, LP. Photography shown on this site is represented by placeholders pending production.</p>
+    <p style="margin-top:24px;font-family:var(--mono);font-size:12px;color:var(--muted)">Questions? Contact <a href="mailto:inquiries@eighteengrove.com" style="color:var(--green)">inquiries@eighteengrove.com</a>.</p>
+  </div></div></section>
+  <footer class="site"><div class="wrap"><div class="foot-top"><div><div class="foot-mark"><span class="oak"><svg><use href="#oak"/></svg></span><span class="wordmark">Eighteen Grove</span></div><p>Eighteen Grove Management, LP · Coconut Grove, Miami.</p></div><div class="foot-col"><h5>Sections</h5><a href="#firm" data-nav>Firm</a><a href="#approach" data-nav>Approach</a></div><div class="foot-col"><h5>Access</h5><a href="#login" data-nav>Investor relations</a><a href="#contact" data-nav>Contact</a></div><div class="foot-col"><h5>Office</h5><a>Coconut Grove, Miami</a></div></div><div class="foot-bot"><span>© 2026 Eighteen Grove</span><span class="disc">For informational purposes only.</span></div></div></footer>
+</main>
+
+<!-- LOGIN -->
+<main id="login" class="page">
+  <div class="login-screen">
+    <div class="login-edit">
+      <span class="oak oak-bg"><svg><use href="#oak"/></svg></span>
+      <div class="login-vol">Eighteen Grove · Investor Relations</div>
+      <h2>The reading<br>room, <em>in time.</em></h2>
+      <div class="efoot">Are you a prospective investor? <a href="#contact" data-nav>Get in touch</a> — access is arranged with the firm directly.<br>Coconut Grove, Miami · See our <a href="#legal" data-nav>Privacy Policy</a></div>
+    </div>
+    <div class="login-form-side">
+      <div class="lform">
+        <div class="brand"><span class="oak"><svg><use href="#oak"/></svg></span><span class="wordmark">Eighteen Grove</span></div>
+        <div class="sub">Investor Relations — Sign in</div>
+        <h3>Welcome back.</h3>
+        <p class="intro">For current investors. Reporting and capital notices will live here as the firm formalizes its operations.</p>
+        <form onsubmit="return false">
+          <div class="field"><label for="l-id">Investor ID or Email</label><input id="l-id" type="text" autocomplete="username" placeholder="name@institution.com" /></div>
+          <div class="field"><label for="l-pw">Password</label><input id="l-pw" type="password" autocomplete="current-password" placeholder="••••••••••" /></div>
+          <div class="lrow"><label class="rem" for="l-rem"><input id="l-rem" type="checkbox" class="b" /> Keep me signed in</label><a href="#login">Forgot password</a></div>
+          <button class="lbtn">Sign in</button>
+        </form>
+        <div class="lnote">Prospective investor? <a href="#contact" data-nav>Get in touch</a> — access is arranged with the firm directly.</div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script>
+  const pages=document.querySelectorAll('.page'),navLinks=document.querySelectorAll('nav.links a');
+  const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const revealSel='.secbar, .idx-item, .movement, .pull blockquote, .feature-grid > div, .ribbon .cell, .reveal, .mw-item';
+  let revObserver;
+  if('IntersectionObserver'in window && !reduce){
+    revObserver=new IntersectionObserver((entries)=>{entries.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');revObserver.unobserve(en.target)}})},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  }
+  function armReveal(){if(!revObserver)return;const active=document.querySelector('.page.active');if(!active)return;active.querySelectorAll(revealSel).forEach((el,i)=>{if(!el.classList.contains('reveal')){el.classList.add('reveal')}el.style.transitionDelay=(Math.min(i,8)*55)+'ms';revObserver.observe(el)})}
+  let tocObserver;
+  function armToc(){
+    const links=document.querySelectorAll('.toc-link');if(!links.length||!('IntersectionObserver'in window))return;
+    const map={};links.forEach(l=>{map[l.getAttribute('href').slice(1)]=l});
+    tocObserver=new IntersectionObserver((entries)=>{entries.forEach(en=>{if(en.isIntersecting){links.forEach(l=>l.classList.remove('active'));const l=map[en.target.id];if(l)l.classList.add('active')}})},{rootMargin:'-15% 0px -70% 0px'});
+    Object.keys(map).forEach(id=>{const t=document.getElementById(id);if(t)tocObserver.observe(t)});
+    links.forEach(l=>l.addEventListener('click',e=>{const id=l.getAttribute('href').slice(1);const t=document.getElementById(id);if(t){e.preventDefault();t.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'})}}));
+  }
+  const TITLES={home:'Eighteen Grove — Private investment for founder & family-owned businesses',firm:'The Firm — Eighteen Grove',approach:'How we partner — Eighteen Grove',criteria:'Investment Criteria — Eighteen Grove',insights:'Guides — Eighteen Grove',contact:'Start a conversation — Eighteen Grove',legal:'Disclosures & Policies — Eighteen Grove',login:'Investor Relations — Eighteen Grove'};
+  function route(h){const id=(h||'#home').replace('#','');let f=false;pages.forEach(p=>{p.classList.toggle('active',p.id===id);if(p.id===id)f=true});if(!f)document.getElementById('home').classList.add('active');document.title=TITLES[id]||TITLES.home;navLinks.forEach(a=>{const on=a.getAttribute('href')==='#'+id;a.classList.toggle('active',on);if(on){a.setAttribute('aria-current','page')}else{a.removeAttribute('aria-current')}});window.scrollTo(0,0);document.getElementById('mobileMenu').classList.remove('open');if(tocObserver){tocObserver.disconnect();tocObserver=null}requestAnimationFrame(()=>{armReveal();armToc()})}
+  document.querySelectorAll('[data-nav]').forEach(a=>a.addEventListener('click',e=>{const h=a.getAttribute('href');if(h&&h.startsWith('#')){e.preventDefault();history.pushState(null,'',h);route(h)}}));
+  window.addEventListener('popstate',()=>route(location.hash));
+  document.getElementById('burger').addEventListener('click',()=>document.getElementById('mobileMenu').classList.toggle('open'));
+  route(location.hash);
+</script>
+</body>
+</html>
