@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- PREVIEW ONLY: remove this noindex line before the real launch -->
+<meta name="robots" content="noindex,nofollow" />
+<title>Eighteen Grove — Entrepreneurial Private Equity</title>
+<meta name="description" content="Eighteen Grove is an entrepreneurial private equity firm in Miami. We partner with exceptional operators to build enduring platforms — investing in founder- and family-owned businesses with $1–$10M of EBITDA." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --forest:#1B3B28; --forest-2:#225831;
+    --white:#FCFBF8; --ink:#1A1915; --body-c:#4A473F;
+    --line:#E3E0D6; --muted:#807B6E;
+    --serif:'Instrument Serif', Georgia, serif;
+    --sans:'Instrument Sans', system-ui, sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);background:var(--white);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 44px}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  :focus-visible{outline:2px solid var(--forest-2);outline-offset:3px}
+  .oak{display:inline-block;background-color:currentColor;-webkit-mask:url(assets/oak-green.png) center/contain no-repeat;mask:url(assets/oak-green.png) center/contain no-repeat}
+  .label{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--muted)}
+
+  header{position:sticky;top:0;z-index:50;background:rgba(252,251,248,.94);backdrop-filter:blur(8px)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:78px;border-bottom:1px solid var(--line)}
+  .brand{display:flex;align-items:center;gap:11px;color:var(--forest);font-weight:600;font-size:17px;letter-spacing:-.01em}
+  .brand .oak{width:30px;height:28px}
+  nav{display:flex;gap:30px;align-items:center}
+  nav a{font-size:14.5px;font-weight:500;color:var(--body-c)}
+  nav a:hover{color:var(--forest)}
+  nav a.cta{background:var(--forest);color:var(--white);padding:10px 20px;border-radius:99px;font-weight:600}
+  nav a.cta:hover{background:var(--forest-2);color:var(--white)}
+  @media(max-width:800px){nav a:not(.cta){display:none}}
+
+  /* HERO — pure statement */
+  .hero{padding:130px 0 110px;text-align:left}
+  .hero .label{color:var(--forest-2)}
+  .hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(52px,8vw,108px);line-height:1.0;letter-spacing:-.015em;margin-top:26px;max-width:11em}
+  .hero h1 em{font-style:italic;color:var(--forest-2)}
+  .hero .sub{margin-top:34px;font-size:19px;color:var(--body-c);max-width:32em;line-height:1.65}
+  .hero .scroll{margin-top:56px;font-size:13px;color:var(--muted);letter-spacing:.06em}
+
+  section{padding:96px 0;border-top:1px solid var(--line)}
+
+  /* WHO */
+  .who .grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:70px}
+  .who h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.4vw,42px);line-height:1.1}
+  .who p{font-size:17.5px;color:var(--body-c);max-width:32em;margin-bottom:18px;line-height:1.7}
+  .who p b{color:var(--ink);font-weight:600}
+  @media(max-width:800px){.who .grid{grid-template-columns:1fr;gap:24px}}
+
+  /* PRINCIPLE — huge line */
+  .principle{text-align:center;padding:130px 0}
+  .principle .label{color:var(--forest-2)}
+  .principle h2{font-family:var(--serif);font-weight:400;font-size:clamp(40px,6.4vw,84px);line-height:1.04;margin-top:24px}
+  .principle h2 em{font-style:italic;color:var(--forest-2)}
+  .principle p{margin-top:26px;font-size:18px;color:var(--body-c);max-width:30em;margin-left:auto;margin-right:auto}
+
+  /* FOCUS — numbered list rows */
+  .focus .rows{margin-top:44px}
+  .focus .row{display:grid;grid-template-columns:110px 1fr 1.4fr;gap:36px;padding:36px 0;border-top:1px solid var(--line);align-items:baseline}
+  .focus .row:last-child{border-bottom:1px solid var(--line)}
+  .focus .num{font-family:var(--serif);font-size:30px;color:var(--forest-2)}
+  .focus .row h3{font-size:23px;font-weight:600;letter-spacing:-.01em}
+  .focus .row p{font-size:16px;color:var(--body-c)}
+  @media(max-width:800px){.focus .row{grid-template-columns:1fr;gap:8px;padding:24px 0}}
+
+  /* PHOTO BAND */
+  .band{padding:0;border:none}
+  .band img{width:100%;height:440px;object-fit:cover}
+  .band .cap{padding:14px 44px;font-size:12.5px;color:var(--muted)}
+
+  /* PARTNER */
+  .partner h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.4vw,42px)}
+  .partner .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:44px}
+  .partner .col{border-top:2px solid var(--forest);padding-top:22px}
+  .partner .col h3{font-size:18px;font-weight:600;margin-bottom:8px}
+  .partner .col p{font-size:15px;color:var(--body-c)}
+  .partner .kicker{margin-top:44px;font-size:16.5px;color:var(--ink);font-weight:500}
+  @media(max-width:800px){.partner .cols{grid-template-columns:1fr;gap:26px}}
+
+  /* CRITERIA */
+  .criteria .top{display:flex;justify-content:space-between;align-items:baseline;gap:30px;flex-wrap:wrap}
+  .criteria h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.4vw,42px)}
+  .criteria .ebitda{font-family:var(--serif);font-size:clamp(40px,5vw,64px);color:var(--forest);margin:40px 0 8px}
+  .criteria .ebk{font-size:13px;letter-spacing:.13em;text-transform:uppercase;font-weight:600;color:var(--muted)}
+  .criteria ul{list-style:none;margin-top:44px;display:grid;grid-template-columns:repeat(2,1fr);gap:0 60px}
+  .criteria li{font-size:19px;font-weight:500;padding:22px 0;border-top:1px solid var(--line);display:flex;gap:16px;align-items:baseline}
+  .criteria li .d{font-family:var(--serif);color:var(--forest-2)}
+  @media(max-width:800px){.criteria ul{grid-template-columns:1fr}}
+
+  /* STEWARD */
+  .steward{background:var(--forest);color:var(--white);border:none;padding:120px 0}
+  .steward blockquote{font-family:var(--serif);font-weight:400;font-size:clamp(30px,4.4vw,56px);line-height:1.14;max-width:19em}
+  .steward blockquote em{font-style:italic;color:#CBE3D2}
+  .steward p{margin-top:28px;font-size:16.5px;color:rgba(252,251,248,.75);max-width:34em}
+
+  /* CONTACT — letter style */
+  .contact{padding:120px 0}
+  .contact .label{color:var(--forest-2)}
+  .contact h2{font-family:var(--serif);font-weight:400;font-size:clamp(34px,4.6vw,60px);margin-top:20px;max-width:15em;line-height:1.06}
+  .contact h2 em{font-style:italic;color:var(--forest-2)}
+  .contact .mail{display:inline-block;margin-top:36px;font-family:var(--serif);font-size:clamp(24px,3vw,36px);color:var(--forest);border-bottom:2px solid var(--forest-2);padding-bottom:4px}
+  .contact .mail:hover{color:var(--forest-2)}
+  .contact .meta{margin-top:34px;font-size:14.5px;color:var(--muted);line-height:1.9}
+  .contact .conf{margin-top:22px;font-size:14.5px;color:var(--body-c);max-width:34em}
+
+  footer{border-top:1px solid var(--line);padding:30px 0 42px}
+  footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;font-size:12.5px;color:var(--muted)}
+  footer .disc{max-width:52em;line-height:1.7}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><span class="oak"></span>Eighteen Grove</a>
+    <nav>
+      <a href="#firm">Firm</a>
+      <a href="#focus">Focus</a>
+      <a href="#criteria">Criteria</a>
+      <a class="cta" href="#contact">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="border:none">
+    <div class="wrap">
+      <span class="label" style="color:var(--forest-2)">Entrepreneurial private equity · Miami</span>
+      <h1>A partner for the businesses people spend a life <em>building.</em></h1>
+      <p class="sub">Eighteen Grove partners with exceptional operators to build enduring platforms. Hands-on, long-term partnership: we keep management and build value over time.</p>
+      <div class="scroll">↓</div>
+    </div>
+  </section>
+
+  <section class="who" id="firm">
+    <div class="wrap grid">
+      <h2>Built quietly,<br>over decades.</h2>
+      <div>
+        <p>We believe the best businesses are built quietly, over decades, by owners who prioritize their people and their craft. <b>Eighteen Grove was created to be the right next steward for what they've built.</b></p>
+        <p>We invest in and actively grow founder- and family-owned businesses with existing management — taking a long-term view that preserves and enhances equity value for owners and investors alike.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="principle">
+    <div class="wrap">
+      <span class="label">Our foundational principle</span>
+      <h2>Partner<em>ship.</em></h2>
+      <p>Real transaction and operating experience, applied hands-on with management — sharpening execution without disturbing what already works.</p>
+    </div>
+  </section>
+
+  <div class="band">
+    <img src="assets/golden-field.jpg" alt="Sun rising over an open golden field" />
+  </div>
+
+  <section class="focus" id="focus">
+    <div class="wrap">
+      <span class="label">Three things we focus on relentlessly</span>
+      <div class="rows">
+        <div class="row">
+          <span class="num">01</span>
+          <h3>Culture &amp; People</h3>
+          <p>The teams owners build are the reason a business endures. We invest behind people and protect the culture that made the business worth backing.</p>
+        </div>
+        <div class="row">
+          <span class="num">02</span>
+          <h3>Delighting Customers</h3>
+          <p>Loyal customers are the moat. We obsess over the service, reliability, and relationships that keep them coming back — year after year.</p>
+        </div>
+        <div class="row">
+          <span class="num">03</span>
+          <h3>Operational Excellence</h3>
+          <p>A long-term view that preserves and enhances equity value — building substantial value for owners and investors over years, not quarters.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="partner">
+    <div class="wrap">
+      <span class="label">How we partner</span>
+      <h2 style="margin-top:16px">Hands-on, long-term partnership.</h2>
+      <div class="cols">
+        <div class="col"><h3>Transition ownership</h3><p>For owners ready to step back — on a timeline that respects what they built.</p></div>
+        <div class="col"><h3>Bring on a partner</h3><p>For owners who want to keep building, with capital and experience alongside them.</p></div>
+        <div class="col"><h3>Find the next steward</h3><p>For owners who care most about who carries the business — and its people — forward.</p></div>
+      </div>
+      <p class="kicker">We keep management and build value over time.</p>
+    </div>
+  </section>
+
+  <section class="criteria" id="criteria">
+    <div class="wrap">
+      <div class="top">
+        <div>
+          <span class="label">Target profile</span>
+          <h2 style="margin-top:14px">What we look for.</h2>
+        </div>
+        <div>
+          <div class="ebitda">$1M – $10M</div>
+          <div class="ebk">EBITDA · founder &amp; family-owned</div>
+        </div>
+      </div>
+      <ul>
+        <li><span class="d">01</span>Facility &amp; Commercial Services</li>
+        <li><span class="d">02</span>Business &amp; Professional Services</li>
+        <li><span class="d">03</span>Residential &amp; Consumer Services</li>
+        <li><span class="d">04</span>Specialty Distribution &amp; Logistics</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="steward">
+    <div class="wrap">
+      <blockquote>Continuity for employees, customers and vendors — and a foundation <em>built on, not torn down.</em></blockquote>
+      <p>We operate with a long-term mindset: preserve what makes a business special, and thoughtfully build on it over time.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <span class="label">Contact</span>
+      <h2>If you've built something worth continuing, <em>write to us.</em></h2>
+      <a class="mail" href="mailto:info@eighteengrove.com">info@eighteengrove.com</a>
+      <p class="conf">Every conversation is confidential, and exploring is not a commitment. Owners, operators, and advisors welcome.</p>
+      <p class="meta">Eighteen Grove · 2980 McFarlane Road, Miami, FL 33133</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Eighteen Grove</span>
+    <span class="disc">For informational purposes only. Nothing on this site is an offer to sell or a solicitation of an offer to buy any security. Figures describe the businesses Eighteen Grove seeks to partner with, not a track record.</span>
+  </div>
+</footer>
+
+</body>
+</html>
