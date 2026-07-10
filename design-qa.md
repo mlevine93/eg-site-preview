@@ -1,51 +1,49 @@
 # Design QA
 
-- Source visual truth:
-  - `qa/source-grove.png`
-  - `qa/source-founders.png`
-  - `qa/source-evergreen.png`
-- Implementation screenshots:
-  - `qa/grove-desktop.png`
-  - `qa/founders-desktop.png`
-  - `qa/evergreen-desktop.png`
-  - `qa/grove-mobile.png`
-  - `qa/founders-mobile.png`
-  - `qa/evergreen-mobile.png`
-- Comparison evidence: `qa/comparison.png` and `qa/comparison-evergreen.png`
-- Viewports: 1440 × 1024 desktop; 390 × 844 mobile
-- State: default landing-page state at the top of each direction
+- Source visual truth: `qa/springdale-reference.png` (the reference named by Dylan)
+- User-rejected state: `qa/founders-before.png`
+- Revised implementation: `qa/founders-after.png`
+- Mobile implementation: `qa/founders-mobile-after.png`
+- Side-by-side evidence: `qa/founders-comparison-v2.png`
+- Viewports: 1440 × 1024 desktop and 390 × 844 mobile
+- State: top of Option 2, default navigation state
 
 ## Findings
 
-No actionable P0, P1, or P2 findings remain.
+No actionable P0, P1, or P2 issues remain.
 
-- Fonts and typography: Spectral/Mulish and Instrument Serif/Instrument Sans match the intended editorial and founder-led directions. Headline scale, line height, emphasis, and wrapping preserve the hierarchy of each source without clipping at desktop or mobile widths.
-- Spacing and layout rhythm: Hero proportions, qualification rails, section transitions, and CTA placement follow the source concepts. Mobile layouts reflow to one column with no horizontal overflow and keep the primary action visible in the first screen.
-- Colors and visual tokens: Cream, evergreen, clay, and restrained gold tokens match the source palettes and retain readable foreground/background contrast.
-- Image quality and asset fidelity: Existing Eighteen Grove photography is used at natural aspect ratios with intentional crops. The exact generated hero scenes were replaced with existing project photography in the same art direction; this is an intentional asset substitution, not unresolved design drift.
-- Copy and content: Approved positioning, EBITDA target, sector criteria, confidentiality language, contact details, and disclaimer are preserved. No portfolio, returns, testimonial, or track-record claims were added.
+- Fonts and typography: Option 2 now uses a large, high-contrast editorial headline over real photography, preserving Eighteen Grove’s serif identity while adopting Springdale’s bold image-led hierarchy. Desktop and mobile wrapping are readable and unclipped.
+- Spacing and layout rhythm: The previous oversized empty canvas was replaced with a full-bleed 720px hero, bottom-weighted content, immediate CTAs, and a compact qualification rail. The mobile hero and rail meet without a dead gap and produce no horizontal overflow.
+- Colors and visual tokens: The white header, deep grove overlay, warm cream emphasis, and high-contrast actions retain Eighteen Grove’s palette while differentiating Option 2 from Grove and Evergreen.
+- Image quality and asset fidelity: The existing Eighteen Grove oak-field photograph is used at full resolution with an intentional crop. The official horizontal green lockup remains in the header. No generated placeholders, handcrafted SVGs, or CSS-drawn assets were introduced.
+- Copy and content: All three options now include every current site requirement from Dylan’s July 10 email: entrepreneurial private equity, the official logo, no personal name, `info@eighteengrove.com`, the Miami address, $1M–$10M target EBITDA, four investment sectors, Partnership as the foundational principle, all requested positioning phrases, and the three focus areas. Guides remain removed.
+
+## Email gap audit
+
+The earlier build was inconsistent on two requested commitments:
+
+1. “We partner with exceptional operators to build enduring platforms.”
+2. “We keep management and build value over time.”
+
+Both are now explicit in Grove, Founders, and Evergreen. The verbose three-row Approach section was also replaced in every option with one concise partnership statement, reflecting Dylan’s “less is more” guidance and his note that the detailed Approach content was probably unnecessary.
 
 ## Interaction and browser checks
 
-- Selector-page cards navigate to their matching direction.
-- The primary “Start a confidential conversation” CTA scrolls to the contact section.
-- Header navigation and criteria links use valid in-page anchors.
-- Mail links use `mailto:info@eighteengrove.com`.
-- All rendered images loaded successfully.
+- Option 2 primary CTA scrolls to the contact section.
+- Header links and criteria links resolve to valid in-page sections.
+- All three pages load the correct official logo lockup and contain no broken images.
+- Desktop and mobile layouts have no horizontal overflow.
 - Browser console errors checked: none.
-
-## Focused comparison evidence
-
-Focused comparison was performed on the hero, header, CTA group, qualification rail, and first section transition because those are the defining fidelity surfaces in the three selected concepts. The long-form sections reuse the same verified component system and approved content.
 
 ## Comparison history
 
-1. Initial capture found two P2 issues: default `figure` margins inset the hero imagery, and selector-page anchors inherited browser-default link styling. Both were corrected in `site.css` and `index.html`.
-2. Mobile capture found one P2 issue: the Founders CTA group shrink-wrapped instead of using the available mobile width. The mobile Founders action group was set to full width.
-3. Post-fix desktop and mobile captures showed no remaining P0/P1/P2 issues, no horizontal overflow, no broken images, and no console errors.
+1. Initial evidence confirmed the user’s P1 concern: Option 2 used an oversized empty white hero and a narrow photo strip, unlike the bold, full-bleed Springdale reference.
+2. Option 2 was rebuilt as an image-led hero with content over photography, immediate conversion actions, and an integrated qualification rail.
+3. First mobile capture found a P2 dead band below the hero because the grid remained taller than the image. The mobile grid height was aligned to the image height.
+4. Post-fix captures show no remaining P0/P1/P2 issues.
 
 ## Follow-up polish
 
-- P3: Replace the existing forest and field photographs with final licensed Eighteen Grove photography once a direction is selected.
+- P3: Replace the current oak-field image with final licensed Eighteen Grove photography if Dylan selects Option 2.
 
 final result: passed
