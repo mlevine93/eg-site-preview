@@ -18,3 +18,7 @@ Both remaining directions retain Dylan's current requirements: entrepreneurial p
 - No selector link or stylesheet rule references the deleted Founders direction.
 
 final result: passed
+
+## Update (Claude)
+
+- Evergreen restored to its dark quiet-luxury identity (deep-forest ground, cream serif, gold accents) so the two options present a genuine stylistic choice vs. Grove. All content requirements re-verified after the restore.
