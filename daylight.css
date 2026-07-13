@@ -63,7 +63,7 @@ h1, h2, h3, blockquote { font-family: var(--display); font-weight: 400; letter-s
 .partnership { padding: 108px 0; background: var(--sky); border-top: 1px solid var(--sky-strong); border-bottom: 1px solid var(--sky-strong); }
 .partnership-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 100px; align-items: center; }
 .partnership h2 { margin: 14px 0 0; font-size: clamp(66px, 8vw, 116px); line-height: .86; }
-.partnership h2 em { color: #b2742f; font-weight: 400; }
+.partnership h2 em { color: #b2742f; font-weight: 400; margin-left: -0.045em; }
 .partnership p { max-width: 38em; color: var(--body); font-size: 17px; }
 .partnership .partnership-lead { color: var(--ink); font-family: var(--display); font-size: clamp(28px, 3vw, 40px); line-height: 1.23; }
 .partnership .commitment { margin: 28px 0 0; color: var(--ink); font-weight: 700; }
