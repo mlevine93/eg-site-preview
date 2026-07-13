@@ -36,7 +36,7 @@ h1, h2, h3, blockquote { font-family: var(--display); font-weight: 400; letter-s
 .hero { padding: 104px 0 0; overflow: hidden; }
 .hero-intro { display: grid; grid-template-columns: 1.35fr .65fr; gap: 80px; align-items: end; }
 .hero-intro > *, .story-grid > *, .partnership-grid > *, .section-heading > *, .criteria-top > *, .target > *, .contact-grid > * { min-width: 0; }
-.hero h1 { max-width: 9.5em; margin: 22px 0 0; font-size: clamp(62px, 7.1vw, 106px); line-height: .91; }
+.hero h1 { max-width: 9.5em; margin: 22px 0 0; font-size: clamp(62px, 7.1vw, 106px); line-height: 1.04; }
 .hero h1 em { color: #b2742f; font-weight: 400; }
 .hero-side { padding-bottom: 10px; }
 .hero-side > p { margin-bottom: 0; color: var(--body); font-size: 17px; line-height: 1.78; }
