@@ -37,4 +37,10 @@
 - Ownership-transition, value-added partner, and right-next-steward language is present in both.
 - All requested sector, focus-area, partnership, stewardship, contact, and target-profile language is present in both.
 
-Final result: passed locally; live verification follows the Pages deployment.
+## Live deployment audit
+
+- GitHub Pages served the current versioned stylesheets for both directions.
+- Both live pages loaded without failed images or horizontal overflow at desktop size.
+- The live chooser contains exactly two cards: Grove and Daylight.
+
+Final result: passed locally and on the live GitHub Pages preview.
